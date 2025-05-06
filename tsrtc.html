@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TSRTC Bus Pass Application</title>
+</head>
+<body>
+
+  <h1>TSRTC Bus Pass Application Form</h1>
+
+  <form action="./login.html">
+
+    <!-- Applicant Details Section -->
+    <fieldset>
+      <legend>Applicant Details</legend>
+
+      Name: <input type="text" name="name"><br><br>
+      Date of Birth: <input type="date" name="dob"><br><br>
+
+      Gender:
+      <input type="radio" name="gender" value="Male"> Male
+      <input type="radio" name="gender" value="Female"> Female<br><br>
+
+      Father's Name: <input type="text" name="father_name"><br><br>
+      Aadhaar Number: <input type="text" name="aadhaar"><br><br>
+      WhatsApp Number: <input type="text" name="whatsapp"><br><br>
+      Email ID: <input type="email" name="email"><br><br>
+      Upload Photo: <input type="file" name="photo"><br><br>
+    </fieldset>
+    <br>
+
+    <!-- Address Details Section -->
+    <fieldset>
+      <legend>Residential Address</legend>
+
+      Address: <input type="text" name="address"><br><br>
+
+      District:
+      <select name="district">
+        <option value="enter District">enter district</option>
+        <option value="Rangareddy">Rangareddy</option>
+      </select><br><br>
+
+      Village: <input type="text" name="village"><br><br>
+      Pincode: <input type="text" name="pincode"><br><br>
+    </fieldset>
+    <br>
+
+    <!-- Pass Details Section -->
+    <fieldset>
+      <legend>Pass Type Details</legend>
+
+      City:
+      <select name="city">
+        <option value="enter city">enter city</option>
+      </select><br><br>
+
+      Pass Type:
+      <select name="pass_type">
+        <option value="general">General</option>
+        <option value="student">Student</option>
+      </select><br><br>
+    </fieldset>
+    <br>
+
+    <!-- Payment and Delivery Section -->
+    <fieldset>
+      <legend>Mode of Payment</legend>
+
+      Payment Mode:
+      <select name="payment_mode">
+        <option value="online">Online</option>
+        <option value="offline">Offline</option>
+      </select><br><br>
+
+      Delivery Mode:
+      <select name="delivery_mode">
+        <option value="collect">Collect from Center</option>
+        <option value="home">Home Delivery</option>
+      </select><br><br>
+
+      Collection Center: <input type="text" name="collection_center"><br><br>
+    </fieldset>
+    <br>
+
+   
+    <input type="submit" value="Submit">
+
+  </form>
+
+</body>
+</html>
